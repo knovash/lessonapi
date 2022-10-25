@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Verify github logic">
+    <test name="Github api test" parallel="methods" thread-count="5">
+        <classes>
+            <class name="com.solvd.lessonapi.UserTest">
+                <methods>
+                    <include name="createUserTest"/>
+                </methods>
+            </class>
+            <class name="com.solvd.lessonapi.GetGitRepoTest">
+            <methods>
+                <include name="GetGitRepoTest"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

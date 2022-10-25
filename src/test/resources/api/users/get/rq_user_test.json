@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "SOME_NAME",
+    "name": "${name}",
     "username": "SOME_USERNAME",
-    "email": "Sincere@april.biz",
+    "email": "${email}",
     "address": {
       "street": "Kulas Light",
       "suite": "Apt. 556",

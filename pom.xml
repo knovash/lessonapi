@@ -19,6 +19,12 @@
             <artifactId>carina-api</artifactId>
             <version>8.0.0</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.webjars.npm</groupId>-->
+<!--            <artifactId>octokit__endpoint</artifactId>-->
+<!--            <version>6.0.12</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 </project>

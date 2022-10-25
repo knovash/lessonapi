@@ -6,7 +6,7 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 public class PostUserMethod extends AbstractApiMethodV2 {
 
     public PostUserMethod() {
-        super("/api/users/get/rq.json", "/api/users/get/rs.json");
-        replaceUrlPlaceholder("base_url", Configuration.getEnvArg("url"));
+        super("/api/users/get/rq_user_test.json", "/api/users/get/rs_user_test.json");
+        replaceUrlPlaceholder("base_url", "https://jsonplaceholder.typicode.com");
     }
 }
