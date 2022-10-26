@@ -3,15 +3,22 @@
 <suite name="Verify github logic">
     <test name="Github api test" parallel="methods" thread-count="5">
         <classes>
-            <class name="com.solvd.lessonapi.UserTest">
-                <methods>
-                    <include name="createUserTest"/>
-                </methods>
+            <class name="com.solvd.lessonapi.GetEmojisTest">
             </class>
-            <class name="com.solvd.lessonapi.GetGitRepoTest">
-            <methods>
-                <include name="GetGitRepoTest"/>
-            </methods>
+
+            <class name="com.solvd.lessonapi.GetOctocatTest">
+            </class>
+
+            <class name="com.solvd.lessonapi.GetUserTest">
+            </class>
+
+            <class name="com.solvd.lessonapi.PostIssueTest">
+            </class>
+
+            <class name="com.solvd.lessonapi.PatchIssueTest">
+            </class>
+
+            <class name="com.solvd.lessonapi.PatchIssueOldTest">
             </class>
         </classes>
     </test>
