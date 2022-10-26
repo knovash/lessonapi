@@ -1,6 +1,7 @@
 package com.solvd.lessonapi;
 
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
+import com.qaprosoft.carina.core.foundation.utils.Configuration;
 import org.testng.annotations.Test;
 
 public class PostIssueTest {
@@ -12,7 +13,7 @@ public class PostIssueTest {
         postIssueMethod.addProperty("body", "Issue body text");
         postIssueMethod.addProperty("labels", "Issue label");
         postIssueMethod.addProperty("owner", "knovash");
-        postIssueMethod.setHeaders("Authorization=Bearer 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");
+        postIssueMethod.setHeaders("Authorization=Bearer " + Configuration.getEnvArg("token"));
         postIssueMethod.expectResponseStatus(HttpResponseStatusType.CREATED_201);
         postIssueMethod.callAPI();
     }
