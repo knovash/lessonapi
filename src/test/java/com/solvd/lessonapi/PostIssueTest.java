@@ -11,7 +11,8 @@ public class PostIssueTest {
         postIssueMethod.addProperty("title", "Issue title");
         postIssueMethod.addProperty("body", "Issue body text");
         postIssueMethod.addProperty("labels", "Issue label");
-        postIssueMethod.setHeaders("Authorization=Bearer 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");
+        postIssueMethod.addProperty("owner", "knovash");
+        postIssueMethod.setHeaders("Authorization=Bearer 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");
         postIssueMethod.expectResponseStatus(HttpResponseStatusType.CREATED_201);
         postIssueMethod.callAPI();
     }

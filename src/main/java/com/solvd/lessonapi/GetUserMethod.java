@@ -4,6 +4,6 @@ import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;
 import com.qaprosoft.carina.core.foundation.api.http.HttpMethodType;
 
-@Endpoint(url = "${config.env.url}/users/knovash", methodType = HttpMethodType.GET)
+@Endpoint(url = "${config.env.url}/users/${config.env.owner}", methodType = HttpMethodType.GET)
 public class GetUserMethod extends AbstractApiMethodV2 {
 }

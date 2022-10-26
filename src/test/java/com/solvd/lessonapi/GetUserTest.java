@@ -32,7 +32,7 @@ public class GetUserTest {
         LOGGER.info("Login: " + user.getLogin());
         LOGGER.info("Name: " + user.getName());
         SoftAssert sa = new SoftAssert();
-        sa.assertEquals(user.getLogin(), login, "User login is not knovash");
+        sa.assertEquals(user.getLogin(), login, "User login is not " + login);
         sa.assertEquals(user.getName(), "Konstantin ", "User name is not Konstantin");
         sa.assertAll();
     }
