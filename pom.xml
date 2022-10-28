@@ -11,20 +11,15 @@
     <properties>
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
+        <carina-version>8.0.0</carina-version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.qaprosoft</groupId>
             <artifactId>carina-api</artifactId>
-            <version>8.0.0</version>
+            <version>${carina-version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.webjars.npm</groupId>-->
-<!--            <artifactId>octokit__endpoint</artifactId>-->
-<!--            <version>6.0.12</version>-->
-<!--        </dependency>-->
-
     </dependencies>
 
 </project>
